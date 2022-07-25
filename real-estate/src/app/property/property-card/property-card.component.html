@@ -1,9 +1,15 @@
-<div class="row">
-  <div class="shadow-lg col-sm-3" style="padding: 5px;">
-    <div class="card" style="padding:10px;">
-      <img src="assets/images/house_1.jpg" alt="">
-      <h3>{{property.Name}}</h3>
-      <h3>{{property.Price}}</h3>
-    </div>
+<div class="card" style="padding:40px;">
+  <img src="assets/images/house_1.jpg" alt="">
+  <ul class="list-inline text-center member-icons">
+    <li class="list-inline-item">
+      <button class="btn btn-primary" routerLink="/property-detail/{{prop.id}}"><i class="far fa-edit"></i></button>
+    </li>
+    <li class="list-inline-item">
+      <button class="btn btn-primary"><i class="far fa-address-book"></i></button>
+    </li>
+  </ul>
+  <div class="card-body">
+    <h3>{{prop.Name}}</h3>
+    <h3>{{prop.Price}}</h3>
   </div>
 </div>
